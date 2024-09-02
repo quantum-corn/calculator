@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+header {
+    border-bottom: 1px solid;
+}
+
+header, .main,.calculator, .screen, button {
+    padding: 20px;
+}
+
+.screen, button {
+    border: 1px solid;
+}
+
+.calculator {
+    width: 402px;
+    height: 480px;
+    background-color: slategray;
+    border: 5px solid darkslateblue
+}
+
+.screen {
+    background-color: greenyellow;
+}
+
+.input {
+    font-family: "handjet";
+    font-weight: 400;
+    font-size: x-large;
+}
+
+.result {
+    font-family: "handjet";
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.buttons, .numpad, .special, .operate {
+    display: flex;
+}
+
+.buttons {
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.numpad {
+    width: 200px;
+    flex-direction: row-reverse;
+    flex: 0 0 auto;
+}
+
+.numpad, .func, .operate, .special {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    font-family: "orbitron";
+    font-size: large;
+    font-weight: 900;
+    width: 60px;
+    height: 60px;
+}
+
+.double {
+    width: 130px;
+}
+
+.operate {
+    margin-top: 10px;
+}
+
+.numpad button {
+    background-color: gainsboro;
+}
+
+.special button {
+    background-color: red;
+}
+
+.operate button {
+    background-color: coral;
+}
